@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var a,b
+				a=document.getElementById("first").value;
+				b=document.getElementById("second").value;
+			var sss=a+b
+			function getnum(){
+				a=document.getElementById("first").value;
+				b=document.getElementById("second").value;
+			}
+			function jia(){
+				getnum()
+				var c=Number(a)+Number(b);
+				document.getElementById("result").innerHTML=c;
+			}
+			function jian(){
+				getnum()
+				var c=a-b;
+				document.getElementById("result").innerHTML=c;
+			}
+			function cheng(){
+				getnum()
+				var c=a*b;
+				document.getElementById("result").innerHTML=c;
+			}
+			function chu(){
+				getnum()
+				var c=a/b;
+				document.getElementById("result").innerHTML=c;
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<table border="2">
+			<tr>
+				<td>第一个数</td>
+				<td ><input type="" name="" id="first" value="" /></td>
+			</tr>
+			<tr>
+				<td>第二个数</td>
+				<td ><input id="second"></td>
+			</tr>
+			<tr >
+				<td colspan="2">
+				<button onclick="jia()">+</button>
+				<button onclick="jian()">-</button>
+				<button onclick="cheng()">*</button>
+				<button onclick="chu()">/</button>
+				</td>
+			</tr>
+			<tr>
+				<td  colspan="2" rowspan="2">
+					<p id="result"></p>
+				</td>
+				
+			</tr>			
+		</table>
+	</body>
+</html>
+

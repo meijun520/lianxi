@@ -8,12 +8,16 @@
 
 	<body>
 		<script>
+			var lists=[1,2,5,8,9]
 			function cbtest(a,callback) {
-				callback(c)
+				for(x in lists){
+					callback(a[x])
+				}
+				
 			}
 
-			cbtest(1,function(result) {
-				document.write(result)
+			cbtest(lists,function(result) {
+				alert(result)
 			})
 		</script>
 	</body>
